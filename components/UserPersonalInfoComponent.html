@@ -1,0 +1,1396 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>frontend documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">frontend documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  UserPersonalInfoComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/user-personal-info/user-personal-info.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-user-personal-info</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./user-personal-info.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./user-personal-info.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#confirmacaoSenha" >confirmacaoSenha</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#error" >error</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#estados" >estados</a>
+                            </li>
+                            <li>
+                                <a href="#passForm" >passForm</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#usuario" >usuario</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#clearForm" >clearForm</a>
+                            </li>
+                            <li>
+                                <a href="#confirmarSenha" >confirmarSenha</a>
+                            </li>
+                            <li>
+                                <a href="#delete" >delete</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#refresh" >refresh</a>
+                            </li>
+                            <li>
+                                <a href="#updateOnSubmit" >updateOnSubmit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(userService: <a href="../injectables/UserService.html" target="_self">UserService</a>, authService: <a href="../injectables/AuthService.html" target="_self">AuthService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/components/user-personal-info/user-personal-info.component.ts:19</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>userService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>authService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AuthService.html" target="_self" >AuthService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="clearForm"></a>
+                    <span class="name">
+                        <span ><b>clearForm</b></span>
+                        <a href="#clearForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>clearForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="42"
+                            class="link-to-prism">src/app/components/user-personal-info/user-personal-info.component.ts:42</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="confirmarSenha"></a>
+                    <span class="name">
+                        <span ><b>confirmarSenha</b></span>
+                        <a href="#confirmarSenha"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>confirmarSenha(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="46"
+                            class="link-to-prism">src/app/components/user-personal-info/user-personal-info.component.ts:46</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="delete"></a>
+                    <span class="name">
+                        <span ><b>delete</b></span>
+                        <a href="#delete"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>delete()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="72"
+                            class="link-to-prism">src/app/components/user-personal-info/user-personal-info.component.ts:72</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="26"
+                            class="link-to-prism">src/app/components/user-personal-info/user-personal-info.component.ts:26</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="refresh"></a>
+                    <span class="name">
+                        <span ><b>refresh</b></span>
+                        <a href="#refresh"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>refresh()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="38"
+                            class="link-to-prism">src/app/components/user-personal-info/user-personal-info.component.ts:38</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateOnSubmit"></a>
+                    <span class="name">
+                        <span ><b>updateOnSubmit</b></span>
+                        <a href="#updateOnSubmit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateOnSubmit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="50"
+                            class="link-to-prism">src/app/components/user-personal-info/user-personal-info.component.ts:50</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="confirmacaoSenha"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>confirmacaoSenha</b></span>
+                        <a href="#confirmacaoSenha"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/components/user-personal-info/user-personal-info.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="error"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>error</b></span>
+                        <a href="#error"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/components/user-personal-info/user-personal-info.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="estados"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>estados</b></span>
+                        <a href="#estados"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>EstadosEnum</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/components/user-personal-info/user-personal-info.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="passForm"></a>
+                    <span class="name">
+                        <span ><b>passForm</b></span>
+                        <a href="#passForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;passwordForm&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/components/user-personal-info/user-personal-info.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="usuario"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>usuario</b></span>
+                        <a href="#usuario"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Usuario()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/components/user-personal-info/user-personal-info.component.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { AuthService } from &#x27;./../../services/auth.service&#x27;;
+import { UserService } from &#x27;./../../services/user.service&#x27;;
+import { EstadosEnum } from &#x27;../../enums/EstadosEnum&#x27;;
+import { Usuario } from &#x27;../../model/Usuario&#x27;;
+import { Component, OnInit, ViewChild } from &#x27;@angular/core&#x27;;
+import { first } from &#x27;rxjs/operators&#x27;;
+
+@Component({
+  selector: &#x27;app-user-personal-info&#x27;,
+  templateUrl: &#x27;./user-personal-info.component.html&#x27;,
+  styleUrls: [&#x27;./user-personal-info.component.css&#x27;],
+})
+export class UserPersonalInfoComponent implements OnInit {
+  public usuario &#x3D; new Usuario();
+  public estados &#x3D; EstadosEnum;
+  public confirmacaoSenha: string;
+  public error &#x3D; &#x27;&#x27;;
+
+  @ViewChild(&#x27;passwordForm&#x27;) passForm: any;
+
+  constructor(
+    private userService: UserService,
+    private authService: AuthService
+  ) {}
+
+  ngOnInit(): void {
+    this.authService.user.subscribe((userAuth) &#x3D;&gt; {
+      this.userService
+        .getById(userAuth.idUsuario!)
+        .subscribe((user: Usuario) &#x3D;&gt; {
+          this.usuario &#x3D; user;
+
+          console.log(this.usuario);
+        });
+    });
+  }
+
+  refresh(): void {
+    window.location.reload();
+  }
+
+  clearForm(): void {
+    this.passForm.nativeElement.value &#x3D; &#x27;&#x27;;
+  }
+
+  confirmarSenha(event: any) {
+    this.confirmacaoSenha &#x3D; event.target.value;
+  }
+
+  updateOnSubmit() {
+    if (this.usuario.senhaUsuario !&#x3D; this.confirmacaoSenha) {
+      alert(&#x27;As senhas digitadas estão diferentes!&#x27;);
+      return;
+    }
+
+    this.userService
+      .update(this.usuario)
+      .pipe(first())
+      .subscribe({
+        next: (resp: Usuario) &#x3D;&gt; {
+          this.usuario &#x3D; resp;
+          alert(&#x27;Cadastro atualizado com sucesso!&#x27;);
+          this.refresh();
+        },
+        error: (error) &#x3D;&gt; {
+          this.error &#x3D; error;
+          console.log(this.error);
+        },
+      });
+  }
+
+  delete() {
+    this.userService.delete(this.usuario.emailUsuario).subscribe({
+      next: () &#x3D;&gt; {
+        alert(&#x27;Conta apagada com sucesso!&#x27;);
+        this.authService.logout();
+      },
+      error: (error) &#x3D;&gt; {
+        this.error &#x3D; error;
+        console.log(this.error);
+      },
+    });
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;row d-flex justify-content-center&quot;&gt;
+  &lt;section id&#x3D;&quot;dadosPessoais&quot;&gt;
+    &lt;h3 class&#x3D;&quot;h3Style&quot;&gt;Dados Pessoais&lt;/h3&gt;
+    &lt;div class&#x3D;&quot;col-xs-12 col-sm-11 col-lg-9 col-xl-8&quot;&gt;
+      &lt;form id&#x3D;&quot;dadosPessoais&quot;&gt;
+        &lt;div class&#x3D;&quot;my-4&quot;&gt;
+          &lt;div class&#x3D;&quot;form-group formWidth&quot;&gt;
+            &lt;label for&#x3D;&quot;nomeUsuario&quot; class&#x3D;&quot;form-label&quot;&gt;Nome&lt;/label&gt;
+            &lt;input
+              [(ngModel)]&#x3D;&quot;usuario.nomeUsuario&quot;
+              type&#x3D;&quot;text&quot;
+              class&#x3D;&quot;form-control inputStyle&quot;
+              id&#x3D;&quot;nomeUsuario&quot;
+              name&#x3D;&quot;nomeUsuario&quot;
+              placeholder&#x3D;&quot;Nome&quot;
+              required
+            /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;my-4&quot;&gt;
+          &lt;div class&#x3D;&quot;form-group formWidth&quot;&gt;
+            &lt;label for&#x3D;&quot;sobrenomeUsuario&quot; class&#x3D;&quot;form-label&quot;&gt;Sobrenome&lt;/label&gt;
+            &lt;input
+              [(ngModel)]&#x3D;&quot;usuario.sobrenomeUsuario&quot;
+              type&#x3D;&quot;text&quot;
+              class&#x3D;&quot;form-control inputStyle&quot;
+              id&#x3D;&quot;sobrenomeUsuario&quot;
+              name&#x3D;&quot;sobrenomeUsuario&quot;
+              placeholder&#x3D;&quot;Sobrenome&quot;
+              required
+            /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;my-4&quot;&gt;
+          &lt;div class&#x3D;&quot;form-group formWidth&quot;&gt;
+            &lt;label for&#x3D;&quot;emailUsuario&quot; class&#x3D;&quot;form-label&quot;&gt;E-mail&lt;/label&gt;
+            &lt;input
+              [(ngModel)]&#x3D;&quot;usuario.emailUsuario&quot;
+              type&#x3D;&quot;email&quot;
+              class&#x3D;&quot;form-control inputStyle&quot;
+              id&#x3D;&quot;emailUsuario&quot;
+              name&#x3D;&quot;emailUsuario&quot;
+              disabled
+            /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;my-4&quot;&gt;
+          &lt;div class&#x3D;&quot;form-group&quot;&gt;
+            &lt;label for&#x3D;&quot;cpfUsuario&quot; class&#x3D;&quot;form-label&quot;&gt;CPF&lt;/label&gt;
+            &lt;input
+              [(ngModel)]&#x3D;&quot;usuario.cpfUsuario&quot;
+              type&#x3D;&quot;text&quot;
+              class&#x3D;&quot;form-control inputStyle smallInput-12&quot;
+              id&#x3D;&quot;cpfUsuario&quot;
+              name&#x3D;&quot;cpfUsuario&quot;
+              placeholder&#x3D;&quot;CPF&quot;
+              required
+            /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;my-4&quot;&gt;
+          &lt;div class&#x3D;&quot;form-group&quot;&gt;
+            &lt;label for&#x3D;&quot;dataDeNascimento&quot; class&#x3D;&quot;form-label&quot;
+              &gt;Data de Nascimento&lt;/label
+            &gt;
+            &lt;input
+              [(ngModel)]&#x3D;&quot;usuario.dataDeNascimento&quot;
+              type&#x3D;&quot;date&quot;
+              class&#x3D;&quot;form-control inputStyle smallInput-12&quot;
+              id&#x3D;&quot;dataDeNascimento&quot;
+              name&#x3D;&quot;dataDeNascimento&quot;
+              required
+            /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;my-4&quot;&gt;
+          &lt;div class&#x3D;&quot;form-group&quot;&gt;
+            &lt;label for&#x3D;&quot;telefoneUsuario&quot; class&#x3D;&quot;form-label&quot;&gt;Telefone&lt;/label&gt;
+            &lt;input
+              [(ngModel)]&#x3D;&quot;usuario.telefoneUsuario&quot;
+              type&#x3D;&quot;text&quot;
+              class&#x3D;&quot;form-control inputStyle smallInput-12&quot;
+              id&#x3D;&quot;telefoneUsuario&quot;
+              name&#x3D;&quot;telefoneUsuario&quot;
+              placeholder&#x3D;&quot;Telefone&quot;
+              required
+            /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;my-4&quot;&gt;
+          &lt;div class&#x3D;&quot;form-check d-flex align-items-center ps-0&quot;&gt;
+            &lt;input
+              [(ngModel)]&#x3D;&quot;usuario.compartilharDadosUsuario&quot;
+              type&#x3D;&quot;checkbox&quot;
+              name&#x3D;&quot;compartilharDados&quot;
+              id&#x3D;&quot;compartilharDados&quot;
+              class&#x3D;&quot;form-check-input m-0&quot;
+            /&gt;
+            &lt;label
+              for&#x3D;&quot;compartilharDados&quot;
+              class&#x3D;&quot;form-check-label text-break ps-2&quot;
+              &gt;Gostaria de receber a newsletter &lt;strong&gt;daFazenda&lt;/strong&gt; por
+              email.&lt;/label
+            &gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;row d-flex justify-content-between align-items-center pt-2&quot;&gt;
+          &lt;div class&#x3D;&quot;col-xs-12 col-sm-7 mb-4 mb-sm-0&quot;&gt;
+            &lt;button
+              class&#x3D;&quot;btn buttonStyle&quot;
+              type&#x3D;&quot;submit&quot;
+              form&#x3D;&quot;dadosPessoais&quot;
+              (click)&#x3D;&quot;updateOnSubmit()&quot;
+            &gt;
+              Atualizar cadastro
+            &lt;/button&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;col-xs-12 col-sm-5 mb-2 mb-sm-0&quot;&gt;
+            &lt;button class&#x3D;&quot;btn pStyleDark&quot; type&#x3D;&quot;reset&quot; (click)&#x3D;&quot;refresh()&quot;&gt;
+              Cancelar
+            &lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/form&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;hr /&gt;
+  &lt;section id&#x3D;&quot;senha&quot;&gt;
+    &lt;h3 class&#x3D;&quot;h3Style&quot;&gt;Alterar Senha&lt;/h3&gt;
+    &lt;div class&#x3D;&quot;col-xs-12 col-sm-11 col-lg-9 col-xl-8&quot;&gt;
+      &lt;form #passwordForm id&#x3D;&quot;senha&quot;&gt;
+        &lt;div class&#x3D;&quot;my-4&quot;&gt;
+          &lt;div class&#x3D;&quot;form-group formWidth&quot;&gt;
+            &lt;label for&#x3D;&quot;senhaUsuario&quot; class&#x3D;&quot;form-label&quot;&gt;Senha atual&lt;/label&gt;
+            &lt;input
+              [(ngModel)]&#x3D;&quot;usuario.confirmacaoSenha&quot;
+              type&#x3D;&quot;password&quot;
+              class&#x3D;&quot;form-control inputStyle&quot;
+              id&#x3D;&quot;senhaUsuario&quot;
+              name&#x3D;&quot;senhaUsuario&quot;
+              placeholder&#x3D;&quot;Senha Atual&quot;
+              required
+            /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;my-4&quot;&gt;
+          &lt;div class&#x3D;&quot;form-group formWidth&quot;&gt;
+            &lt;label for&#x3D;&quot;novaSenha&quot; class&#x3D;&quot;form-label&quot;&gt;Nova senha&lt;/label&gt;
+            &lt;input
+              [(ngModel)]&#x3D;&quot;usuario.senhaUsuario&quot;
+              type&#x3D;&quot;password&quot;
+              class&#x3D;&quot;form-control inputStyle&quot;
+              id&#x3D;&quot;novaSenha&quot;
+              name&#x3D;&quot;novaSenha&quot;
+              placeholder&#x3D;&quot;Nova Senha&quot;
+              required
+            /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;my-4&quot;&gt;
+          &lt;div class&#x3D;&quot;form-group formWidth&quot;&gt;
+            &lt;label for&#x3D;&quot;confirmarSenha&quot; class&#x3D;&quot;form-label&quot;
+              &gt;Confirmar nova senha&lt;/label
+            &gt;
+            &lt;input
+              (input)&#x3D;&quot;confirmarSenha($event)&quot;
+              type&#x3D;&quot;password&quot;
+              class&#x3D;&quot;form-control inputStyle&quot;
+              id&#x3D;&quot;confirmarSenha&quot;
+              name&#x3D;&quot;confirmarSenha&quot;
+              placeholder&#x3D;&quot;Confirmar Nova Senha&quot;
+              required
+            /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;row d-flex justify-content-between align-items-center pt-2&quot;&gt;
+          &lt;div class&#x3D;&quot;col-xs-12 col-sm-7 mb-4 mb-sm-0&quot;&gt;
+            &lt;button
+              class&#x3D;&quot;btn buttonStyle&quot;
+              type&#x3D;&quot;submit&quot;
+              form&#x3D;&quot;senha&quot;
+              (click)&#x3D;&quot;updateOnSubmit()&quot;
+            &gt;
+              Atualizar Senha
+            &lt;/button&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;col-xs-12 col-sm-5 mb-2 mb-sm-0&quot;&gt;
+            &lt;button class&#x3D;&quot;btn pStyleDark&quot; type&#x3D;&quot;reset&quot; (click)&#x3D;&quot;clearForm()&quot;&gt;
+              Cancelar
+            &lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/form&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;hr /&gt;
+
+  &lt;section id&#x3D;&quot;endereco&quot;&gt;
+    &lt;h3 class&#x3D;&quot;h3Style&quot;&gt;Endereço&lt;/h3&gt;
+    &lt;div class&#x3D;&quot;col-xs-12 col-sm-8 col-lg-7 col-xl-6&quot;&gt;
+      &lt;form id&#x3D;&quot;endereco&quot;&gt;
+        &lt;div class&#x3D;&quot;row my-4&quot;&gt;
+          &lt;div class&#x3D;&quot;form-group&quot;&gt;
+            &lt;label for&#x3D;&quot;cepEndereco&quot; class&#x3D;&quot;form-label&quot;&gt;CEP&lt;/label&gt;
+            &lt;input
+              [(ngModel)]&#x3D;&quot;usuario.cepEndereco&quot;
+              class&#x3D;&quot;form-control inputStyle smallInput-10&quot;
+              type&#x3D;&quot;text&quot;
+              maxlength&#x3D;&quot;9&quot;
+              name&#x3D;&quot;cepEndereco&quot;
+              id&#x3D;&quot;cepEndereco&quot;
+              placeholder&#x3D;&quot;CEP&quot;
+            /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;row my-4&quot;&gt;
+          &lt;div class&#x3D;&quot;form-group pe-lg-0&quot;&gt;
+            &lt;label for&#x3D;&quot;logradouroEndereco&quot; class&#x3D;&quot;form-label&quot;
+              &gt;Logradouro&lt;/label
+            &gt;
+            &lt;input
+              [(ngModel)]&#x3D;&quot;usuario.logradouroEndereco&quot;
+              class&#x3D;&quot;form-control inputStyle&quot;
+              type&#x3D;&quot;text&quot;
+              name&#x3D;&quot;logradouroEndereco&quot;
+              id&#x3D;&quot;logradouroEndereco&quot;
+              placeholder&#x3D;&quot;Endereço&quot;
+            /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;row d-flex justify-content-between my-4&quot;&gt;
+          &lt;div
+            class&#x3D;&quot;col-xs-12 col-sm-12 col-md-3 col-lg-3 mb-4 mb-sm-4 mb-md-0&quot;
+          &gt;
+            &lt;div class&#x3D;&quot;form-group&quot;&gt;
+              &lt;label for&#x3D;&quot;numeroEndereco&quot; class&#x3D;&quot;form-label&quot;&gt;Número&lt;/label&gt;
+              &lt;input
+                [(ngModel)]&#x3D;&quot;usuario.numeroEndereco&quot;
+                class&#x3D;&quot;form-control inputStyle numInput&quot;
+                type&#x3D;&quot;number&quot;
+                min&#x3D;&quot;0&quot;
+                name&#x3D;&quot;numeroEndereco&quot;
+                id&#x3D;&quot;numeroEndereco&quot;
+                placeholder&#x3D;&quot;Número&quot;
+              /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class&#x3D;&quot;col-xs-12 col-sm-12 col-md-8 col-lg-9 pe-lg-0&quot;&gt;
+            &lt;div class&#x3D;&quot;form-group&quot;&gt;
+              &lt;label for&#x3D;&quot;complementoEndereco&quot; class&#x3D;&quot;form-label&quot;
+                &gt;Complemento&lt;/label
+              &gt;
+              &lt;input
+                [(ngModel)]&#x3D;&quot;usuario.complementoEndereco&quot;
+                class&#x3D;&quot;form-control inputStyle&quot;
+                type&#x3D;&quot;text&quot;
+                maxlength&#x3D;&quot;255&quot;
+                name&#x3D;&quot;complementoEndereco&quot;
+                id&#x3D;&quot;complementoEndereco&quot;
+                placeholder&#x3D;&quot;Complemento&quot;
+              /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;row my-4&quot;&gt;
+          &lt;div class&#x3D;&quot;form-group pe-lg-0&quot;&gt;
+            &lt;label for&#x3D;&quot;bairroEndereco&quot; class&#x3D;&quot;form-label&quot;&gt;Bairro&lt;/label&gt;
+            &lt;input
+              [(ngModel)]&#x3D;&quot;usuario.bairroEndereco&quot;
+              class&#x3D;&quot;form-control inputStyle&quot;
+              type&#x3D;&quot;text&quot;
+              minlength&#x3D;&quot;2&quot;
+              maxlength&#x3D;&quot;255&quot;
+              name&#x3D;&quot;bairroEndereco&quot;
+              id&#x3D;&quot;bairroEndereco&quot;
+              placeholder&#x3D;&quot;Bairro&quot;
+            /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;row d-flex justify-content-between my-4&quot;&gt;
+          &lt;div class&#x3D;&quot;col-xs-12 col-sm-12 col-md-12 col-lg-8 pe-0&quot;&gt;
+            &lt;div class&#x3D;&quot;form-group mb-4 me-3&quot;&gt;
+              &lt;label for&#x3D;&quot;cidadeEndereco&quot; class&#x3D;&quot;form-label&quot;&gt;Cidade&lt;/label&gt;
+              &lt;input
+                [(ngModel)]&#x3D;&quot;usuario.cidadeEndereco&quot;
+                class&#x3D;&quot;form-control inputStyle&quot;
+                type&#x3D;&quot;text&quot;
+                name&#x3D;&quot;cidadeEndereco&quot;
+                id&#x3D;&quot;cidadeEndereco&quot;
+                placeholder&#x3D;&quot;Cidade&quot;
+              /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class&#x3D;&quot;col-xs-12 col-sm-12 col-md-3 col-lg-3&quot;&gt;
+            &lt;div class&#x3D;&quot;form-group&quot;&gt;
+              &lt;label for&#x3D;&quot;estadoEndereco&quot; class&#x3D;&quot;form-label&quot;&gt;Estado&lt;/label&gt;
+              &lt;select
+                [(ngModel)]&#x3D;&quot;usuario.estadoEndereco&quot;
+                name&#x3D;&quot;estadoEndereco&quot;
+                id&#x3D;&quot;estadoEndereco&quot;
+                class&#x3D;&quot;form-control inputStyle smallInput-6&quot;
+              &gt;
+                &lt;option value&#x3D;&quot;&quot; active disabled&gt;&lt;/option&gt;
+                &lt;option
+                  *ngFor&#x3D;&quot;let estado of estados | keyvalue&quot;
+                  [value]&#x3D;&quot;estado.value&quot;
+                  [attr.selected]&#x3D;&quot;
+                    usuario.estadoEndereco &#x3D;&#x3D; estado.value ? true : null
+                  &quot;
+                &gt;
+                  {{ estado.value }}
+                &lt;/option&gt;
+              &lt;/select&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;row d-flex justify-content-between align-items-center pt-2&quot;&gt;
+          &lt;div class&#x3D;&quot;col-xs-12 col-sm-8 mb-4 mb-sm-0&quot;&gt;
+            &lt;button
+              class&#x3D;&quot;btn buttonStyle&quot;
+              type&#x3D;&quot;submit&quot;
+              form&#x3D;&quot;endereco&quot;
+              (click)&#x3D;&quot;updateOnSubmit()&quot;
+            &gt;
+              Atualizar Endereço
+            &lt;/button&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;col-xs-12 col-sm-3 mb-2 mb-sm-0&quot;&gt;
+            &lt;button class&#x3D;&quot;btn pStyleDark&quot; type&#x3D;&quot;reset&quot; (click)&#x3D;&quot;refresh()&quot;&gt;
+              Cancelar
+            &lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/form&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;hr /&gt;
+
+  &lt;section id&#x3D;&quot;apagar&quot;&gt;
+    &lt;h3 class&#x3D;&quot;h3Style&quot;&gt;Apagar minha conta&lt;/h3&gt;
+    &lt;button
+      type&#x3D;&quot;button&quot;
+      class&#x3D;&quot;btn buttonStyle deleteButton mt-4&quot;
+      data-bs-toggle&#x3D;&quot;modal&quot;
+      data-bs-target&#x3D;&quot;#excluirConta&quot;
+    &gt;
+      Apagar
+    &lt;/button&gt;
+
+    &lt;div
+      class&#x3D;&quot;modal fade&quot;
+      id&#x3D;&quot;excluirConta&quot;
+      tabindex&#x3D;&quot;-1&quot;
+      aria-labelledby&#x3D;&quot;excluirContaLabel&quot;
+      aria-hidden&#x3D;&quot;true&quot;
+    &gt;
+      &lt;div class&#x3D;&quot;modal-dialog modal-dialog-centered&quot;&gt;
+        &lt;div class&#x3D;&quot;modal-content&quot;&gt;
+          &lt;div class&#x3D;&quot;modal-header&quot;&gt;
+            &lt;h5 class&#x3D;&quot;modal-title pStyleDark&quot; id&#x3D;&quot;excluirContaLabel&quot;&gt;
+              Você tem certeza de que deseja fazer isto?
+            &lt;/h5&gt;
+            &lt;button
+              type&#x3D;&quot;button&quot;
+              class&#x3D;&quot;btn-close&quot;
+              data-bs-dismiss&#x3D;&quot;modal&quot;
+              aria-label&#x3D;&quot;Close&quot;
+            &gt;&lt;/button&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;modal-body&quot;&gt;
+            &lt;div
+              class&#x3D;&quot;d-flex justify-content-start align-items-center text-danger&quot;
+            &gt;
+              Sua conta será apagada e o processo é irreversível!
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;modal-footer justify-content-around&quot;&gt;
+            &lt;button class&#x3D;&quot;btn pStyleDark mb-4 mb-sm-2&quot; data-bs-dismiss&#x3D;&quot;modal&quot;&gt;
+              Manter minha conta
+            &lt;/button&gt;
+            &lt;button
+              type&#x3D;&quot;button&quot;
+              class&#x3D;&quot;btn buttonStyle deleteButton p-2 mb-2 mb-sm-2&quot;
+              data-bs-dismiss&#x3D;&quot;modal&quot;
+              (click)&#x3D;&quot;delete()&quot;
+            &gt;
+              Apagar
+            &lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./user-personal-info.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">hr {
+  margin: 1.5rem 0;
+}
+
+@media (max-width: 575.98px) {
+  hr {
+    width: 90%;
+  }
+}
+
+.formWidth {
+  width: 80%;
+}
+
+@media (max-width: 575.98px) {
+  .formWidth {
+    width: 95%;
+  }
+}
+
+.inputStyle.smallInput-auto {
+  width: auto;
+}
+
+.inputStyle.smallInput-6 {
+  width: 6rem;
+}
+
+.inputStyle.smallInput-10 {
+  width: 10rem;
+}
+
+.inputStyle.smallInput-12 {
+  width: 12rem;
+}
+
+.inputStyle.numInput {
+  width: 6rem;
+  padding: 1rem 1rem;
+}
+
+.buttonStyle {
+  min-width: 180px;
+}
+
+.buttonStyle.deleteButton {
+  background-color: #973131;
+}
+
+@media (min-width: 576px) {
+  .noLeftPad {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .checkText {
+    white-space: nowrap;
+  }
+}
+
+input[type&#x3D;&quot;checkbox&quot;] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--body-bg-color);
+  margin: 0;
+}
+
+input[type&#x3D;&quot;checkbox&quot;] {
+  appearance: none;
+  background-color: var(--body-bg-color);
+  margin: 0;
+  font: inherit;
+  color: var(--button-bg-color);
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid var(--button-bg-color);
+  border-radius: 0.25em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+input[type&#x3D;&quot;checkbox&quot;]::before {
+  content: &quot;&quot;;
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--button-bg-color);
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+input[type&#x3D;&quot;checkbox&quot;]:checked::before {
+  transform: scale(1);
+}
+
+input[type&#x3D;&quot;checkbox&quot;]:focus {
+  outline: max(1px, 0.1em) solid currentColor;
+  outline-offset: max(1px, 0.1em);
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="row d-flex justify-content-center">  <section id="dadosPessoais">    <h3 class="h3Style">Dados Pessoais</h3>    <div class="col-xs-12 col-sm-11 col-lg-9 col-xl-8">      <form id="dadosPessoais">        <div class="my-4">          <div class="form-group formWidth">            <label for="nomeUsuario" class="form-label">Nome</label>            <input              [(ngModel)]="usuario.nomeUsuario"              type="text"              class="form-control inputStyle"              id="nomeUsuario"              name="nomeUsuario"              placeholder="Nome"              required            />          </div>        </div>        <div class="my-4">          <div class="form-group formWidth">            <label for="sobrenomeUsuario" class="form-label">Sobrenome</label>            <input              [(ngModel)]="usuario.sobrenomeUsuario"              type="text"              class="form-control inputStyle"              id="sobrenomeUsuario"              name="sobrenomeUsuario"              placeholder="Sobrenome"              required            />          </div>        </div>        <div class="my-4">          <div class="form-group formWidth">            <label for="emailUsuario" class="form-label">E-mail</label>            <input              [(ngModel)]="usuario.emailUsuario"              type="email"              class="form-control inputStyle"              id="emailUsuario"              name="emailUsuario"              disabled            />          </div>        </div>        <div class="my-4">          <div class="form-group">            <label for="cpfUsuario" class="form-label">CPF</label>            <input              [(ngModel)]="usuario.cpfUsuario"              type="text"              class="form-control inputStyle smallInput-12"              id="cpfUsuario"              name="cpfUsuario"              placeholder="CPF"              required            />          </div>        </div>        <div class="my-4">          <div class="form-group">            <label for="dataDeNascimento" class="form-label"              >Data de Nascimento</label            >            <input              [(ngModel)]="usuario.dataDeNascimento"              type="date"              class="form-control inputStyle smallInput-12"              id="dataDeNascimento"              name="dataDeNascimento"              required            />          </div>        </div>        <div class="my-4">          <div class="form-group">            <label for="telefoneUsuario" class="form-label">Telefone</label>            <input              [(ngModel)]="usuario.telefoneUsuario"              type="text"              class="form-control inputStyle smallInput-12"              id="telefoneUsuario"              name="telefoneUsuario"              placeholder="Telefone"              required            />          </div>        </div>        <div class="my-4">          <div class="form-check d-flex align-items-center ps-0">            <input              [(ngModel)]="usuario.compartilharDadosUsuario"              type="checkbox"              name="compartilharDados"              id="compartilharDados"              class="form-check-input m-0"            />            <label              for="compartilharDados"              class="form-check-label text-break ps-2"              >Gostaria de receber a newsletter <strong>daFazenda</strong> por              email.</label            >          </div>        </div>        <div class="row d-flex justify-content-between align-items-center pt-2">          <div class="col-xs-12 col-sm-7 mb-4 mb-sm-0">            <button              class="btn buttonStyle"              type="submit"              form="dadosPessoais"              (click)="updateOnSubmit()"            >              Atualizar cadastro            </button>          </div>          <div class="col-xs-12 col-sm-5 mb-2 mb-sm-0">            <button class="btn pStyleDark" type="reset" (click)="refresh()">              Cancelar            </button>          </div>        </div>      </form>    </div>  </section>  <hr />  <section id="senha">    <h3 class="h3Style">Alterar Senha</h3>    <div class="col-xs-12 col-sm-11 col-lg-9 col-xl-8">      <form #passwordForm id="senha">        <div class="my-4">          <div class="form-group formWidth">            <label for="senhaUsuario" class="form-label">Senha atual</label>            <input              [(ngModel)]="usuario.confirmacaoSenha"              type="password"              class="form-control inputStyle"              id="senhaUsuario"              name="senhaUsuario"              placeholder="Senha Atual"              required            />          </div>        </div>        <div class="my-4">          <div class="form-group formWidth">            <label for="novaSenha" class="form-label">Nova senha</label>            <input              [(ngModel)]="usuario.senhaUsuario"              type="password"              class="form-control inputStyle"              id="novaSenha"              name="novaSenha"              placeholder="Nova Senha"              required            />          </div>        </div>        <div class="my-4">          <div class="form-group formWidth">            <label for="confirmarSenha" class="form-label"              >Confirmar nova senha</label            >            <input              (input)="confirmarSenha($event)"              type="password"              class="form-control inputStyle"              id="confirmarSenha"              name="confirmarSenha"              placeholder="Confirmar Nova Senha"              required            />          </div>        </div>        <div class="row d-flex justify-content-between align-items-center pt-2">          <div class="col-xs-12 col-sm-7 mb-4 mb-sm-0">            <button              class="btn buttonStyle"              type="submit"              form="senha"              (click)="updateOnSubmit()"            >              Atualizar Senha            </button>          </div>          <div class="col-xs-12 col-sm-5 mb-2 mb-sm-0">            <button class="btn pStyleDark" type="reset" (click)="clearForm()">              Cancelar            </button>          </div>        </div>      </form>    </div>  </section>  <hr />  <section id="endereco">    <h3 class="h3Style">Endereço</h3>    <div class="col-xs-12 col-sm-8 col-lg-7 col-xl-6">      <form id="endereco">        <div class="row my-4">          <div class="form-group">            <label for="cepEndereco" class="form-label">CEP</label>            <input              [(ngModel)]="usuario.cepEndereco"              class="form-control inputStyle smallInput-10"              type="text"              maxlength="9"              name="cepEndereco"              id="cepEndereco"              placeholder="CEP"            />          </div>        </div>        <div class="row my-4">          <div class="form-group pe-lg-0">            <label for="logradouroEndereco" class="form-label"              >Logradouro</label            >            <input              [(ngModel)]="usuario.logradouroEndereco"              class="form-control inputStyle"              type="text"              name="logradouroEndereco"              id="logradouroEndereco"              placeholder="Endereço"            />          </div>        </div>        <div class="row d-flex justify-content-between my-4">          <div            class="col-xs-12 col-sm-12 col-md-3 col-lg-3 mb-4 mb-sm-4 mb-md-0"          >            <div class="form-group">              <label for="numeroEndereco" class="form-label">Número</label>              <input                [(ngModel)]="usuario.numeroEndereco"                class="form-control inputStyle numInput"                type="number"                min="0"                name="numeroEndereco"                id="numeroEndereco"                placeholder="Número"              />            </div>          </div>          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 pe-lg-0">            <div class="form-group">              <label for="complementoEndereco" class="form-label"                >Complemento</label              >              <input                [(ngModel)]="usuario.complementoEndereco"                class="form-control inputStyle"                type="text"                maxlength="255"                name="complementoEndereco"                id="complementoEndereco"                placeholder="Complemento"              />            </div>          </div>        </div>        <div class="row my-4">          <div class="form-group pe-lg-0">            <label for="bairroEndereco" class="form-label">Bairro</label>            <input              [(ngModel)]="usuario.bairroEndereco"              class="form-control inputStyle"              type="text"              minlength="2"              maxlength="255"              name="bairroEndereco"              id="bairroEndereco"              placeholder="Bairro"            />          </div>        </div>        <div class="row d-flex justify-content-between my-4">          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 pe-0">            <div class="form-group mb-4 me-3">              <label for="cidadeEndereco" class="form-label">Cidade</label>              <input                [(ngModel)]="usuario.cidadeEndereco"                class="form-control inputStyle"                type="text"                name="cidadeEndereco"                id="cidadeEndereco"                placeholder="Cidade"              />            </div>          </div>          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">            <div class="form-group">              <label for="estadoEndereco" class="form-label">Estado</label>              <select                [(ngModel)]="usuario.estadoEndereco"                name="estadoEndereco"                id="estadoEndereco"                class="form-control inputStyle smallInput-6"              >                <option value="" active disabled></option>                <option                  *ngFor="let estado of estados | keyvalue"                  [value]="estado.value"                  [attr.selected]="                    usuario.estadoEndereco == estado.value ? true : null                  "                >                  {{ estado.value }}                </option>              </select>            </div>          </div>        </div>        <div class="row d-flex justify-content-between align-items-center pt-2">          <div class="col-xs-12 col-sm-8 mb-4 mb-sm-0">            <button              class="btn buttonStyle"              type="submit"              form="endereco"              (click)="updateOnSubmit()"            >              Atualizar Endereço            </button>          </div>          <div class="col-xs-12 col-sm-3 mb-2 mb-sm-0">            <button class="btn pStyleDark" type="reset" (click)="refresh()">              Cancelar            </button>          </div>        </div>      </form>    </div>  </section>  <hr />  <section id="apagar">    <h3 class="h3Style">Apagar minha conta</h3>    <button      type="button"      class="btn buttonStyle deleteButton mt-4"      data-bs-toggle="modal"      data-bs-target="#excluirConta"    >      Apagar    </button>    <div      class="modal fade"      id="excluirConta"      tabindex="-1"      aria-labelledby="excluirContaLabel"      aria-hidden="true"    >      <div class="modal-dialog modal-dialog-centered">        <div class="modal-content">          <div class="modal-header">            <h5 class="modal-title pStyleDark" id="excluirContaLabel">              Você tem certeza de que deseja fazer isto?            </h5>            <button              type="button"              class="btn-close"              data-bs-dismiss="modal"              aria-label="Close"            ></button>          </div>          <div class="modal-body">            <div              class="d-flex justify-content-start align-items-center text-danger"            >              Sua conta será apagada e o processo é irreversível!            </div>          </div>          <div class="modal-footer justify-content-around">            <button class="btn pStyleDark mb-4 mb-sm-2" data-bs-dismiss="modal">              Manter minha conta            </button>            <button              type="button"              class="btn buttonStyle deleteButton p-2 mb-2 mb-sm-2"              data-bs-dismiss="modal"              (click)="delete()"            >              Apagar            </button>          </div>        </div>      </div>    </div>  </section></div></div>'
+    var COMPONENTS = [{'name': 'AdmProfileComponent', 'selector': 'app-adm-profile'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BackToTopComponent', 'selector': 'app-back-to-top'},{'name': 'CartEmptyComponent', 'selector': 'app-cart-empty'},{'name': 'CartItemComponent', 'selector': 'app-cart-item'},{'name': 'CategoryComponent', 'selector': 'app-category'},{'name': 'CategoryCrudComponent', 'selector': 'app-category-crud'},{'name': 'CategoryReadComponent', 'selector': 'app-category-read'},{'name': 'CategorySidebarComponent', 'selector': 'app-category-sidebar'},{'name': 'CategoryUpdateComponent', 'selector': 'app-category-update'},{'name': 'CheckoutProcessComponent', 'selector': 'app-checkout-process'},{'name': 'ComponentCategoriasComponent', 'selector': 'app-component-categorias'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HeroComponent', 'selector': 'app-hero'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'LoginFormComponent', 'selector': 'app-login-form'},{'name': 'MenuComponent', 'selector': 'app-menu'},{'name': 'ModalSearchComponent', 'selector': 'app-modal-search'},{'name': 'NossaHistoriaComponent', 'selector': 'app-nossa-historia'},{'name': 'OrderCardComponent', 'selector': 'app-order-card'},{'name': 'OrdersComponent', 'selector': 'app-orders'},{'name': 'ProductCardComponent', 'selector': 'app-product-card'},{'name': 'ProductComponent', 'selector': 'app-product'},{'name': 'ProductCreateComponent', 'selector': 'app-product-create'},{'name': 'ProductCrudComponent', 'selector': 'app-product-crud'},{'name': 'ProductDeleteComponent', 'selector': 'app-product-delete'},{'name': 'ProductGroupComponent', 'selector': 'app-product-group'},{'name': 'ProductReadComponent', 'selector': 'app-product-read'},{'name': 'ProductUpdateComponent', 'selector': 'app-product-update'},{'name': 'ProfileAdmTabsComponent', 'selector': 'app-profile-adm-tabs'},{'name': 'ProfileTabsComponent', 'selector': 'app-profile-tabs'},{'name': 'PurchaseHistoryComponent', 'selector': 'app-purchase-history'},{'name': 'QuantityInputComponent', 'selector': 'app-quantity-input'},{'name': 'SearchComponent', 'selector': 'app-search'},{'name': 'ShoppingCartComponent', 'selector': 'app-shopping-cart'},{'name': 'ShoppingCartDetailsComponent', 'selector': 'app-shopping-cart-details'},{'name': 'ShoppingCartSummaryComponent', 'selector': 'app-shopping-cart-summary'},{'name': 'SigninComponent', 'selector': 'app-signin'},{'name': 'SigninFormComponent', 'selector': 'app-signin-form'},{'name': 'SigninPasswordRulesComponent', 'selector': 'app-signin-password-rules'},{'name': 'UserPersonalInfoComponent', 'selector': 'app-user-personal-info'},{'name': 'UserProfileComponent', 'selector': 'app-user-profile'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'UserPersonalInfoComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'UserPersonalInfoComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
